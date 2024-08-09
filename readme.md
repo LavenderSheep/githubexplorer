@@ -8,7 +8,7 @@ A simple project for exploring user repositories through GitHub REST API
 * Maven 3.9.7
 
 ### Usage
-Run the app with Maven's `./mvnw spring-boot:run` command or build and run the jar
+Run the app with Maven's `./mvnw spring-boot:run` command or build and run the jar with `mvn clean package`
 
 The app accepts requests GET requests from the main page:
 * `http://localhost:8080`
@@ -16,6 +16,8 @@ The app accepts requests GET requests from the main page:
 GET request format:
 * `Header: “Accept: application/json"`
 * `parameter: username`
+
+If no user is sent, user "LavenderSheep" is sent by default
 
 The app returns the following information as a list for the provided user for each non-fork repository of that user:
 * Repository Name
