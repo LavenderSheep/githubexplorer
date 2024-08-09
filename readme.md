@@ -17,9 +17,9 @@ GET request format:
 * `Header: “Accept: application/json"`
 * `parameter: username`
 
-If no user is sent, user "LavenderSheep" is sent by default
+If no user parameter is sent, repositories of the user "LavenderSheep" are sent by default
 
-The app returns the following information as a list for the provided user for each non-fork repository of that user:
+The app returns a list of each non-fork repository of the requested user, each with the following information:
 * Repository Name
 * Owner Login
 * A list that includes Each branch name and last commit sha of the repository
@@ -28,5 +28,5 @@ In case of a non-existent user, the app returns a 404 error message in the follo
 * Error code
 * Error message
 
-### Request limits and authentication
+### Request limits
 The app by default uses unauthenticated API requests, limiting the usage to 60 requests per hour.
