@@ -17,7 +17,7 @@ GET request format:
 * `Header: “Accept: application/json"`
 * `parameter: username`
 
-If no user parameter is sent, repositories of the user "LavenderSheep" are sent by default
+If no user parameter is sent, repositories of the user "LavenderSheep" are sent back by default
 
 The app returns a list of each non-fork repository of the requested user, each with the following information:
 * Repository Name
