@@ -2,17 +2,12 @@ package com.lavendersheep.githubexplorer;
 
 import java.util.List;
 
-import org.springframework.core.annotation.Order;
-
 import com.fasterxml.jackson.databind.*;
 
 
 public class JSONMapperHandler {
-    @Order(1)
     private String ownerLogin;
-    @Order(2)
     private String repsitoryName;
-    @Order(3)
     private List<BranchHandler> branches;
 
     public String getRepositoryName(){
